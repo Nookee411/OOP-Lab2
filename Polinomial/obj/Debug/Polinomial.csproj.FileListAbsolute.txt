@@ -1,0 +1,6 @@
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\bin\Debug\Polinomial.exe.config
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\bin\Debug\Polinomial.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\bin\Debug\Polinomial.pdb
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\obj\Debug\Polinomial.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\obj\Debug\Polinomial.pdb
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Polinomial\obj\Debug\Polinomial.csprojAssemblyReference.cache

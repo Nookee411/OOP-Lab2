@@ -1,0 +1,6 @@
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\bin\Debug\Hexademical Integer.exe.config
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\bin\Debug\Hexademical Integer.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\bin\Debug\Hexademical Integer.pdb
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\obj\Debug\Hexademical Integer.csprojAssemblyReference.cache
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\obj\Debug\Hexademical Integer.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Hexademical Integer\obj\Debug\Hexademical Integer.pdb

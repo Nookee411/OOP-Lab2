@@ -1,0 +1,7 @@
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\bin\Debug\Text to Vector representation.exe.config
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\bin\Debug\Text to Vector representation.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\bin\Debug\Text to Vector representation.pdb
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\obj\Debug\Text to Vector representation.csprojAssemblyReference.cache
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\obj\Debug\Text to Vector representation.csproj.CoreCompileInputs.cache
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\obj\Debug\Text to Vector representation.exe
+C:\Users\danii\OneDrive\Desktop\Учеба\2 курс\2 семестр\ООП\Lab 2\Text to Vector representation\obj\Debug\Text to Vector representation.pdb
