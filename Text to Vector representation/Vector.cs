@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Text_to_Vector_representation
 {
@@ -30,54 +31,68 @@ namespace Text_to_Vector_representation
     }
     public class Text
     {
-        private SortedDictionary<string, int> Dict;
-        private HashSet<string> Set;
-        private double Length;
+        private SortedDictionary<string, int> Dict; //Dictionary
+        private HashSet<string> Set;//All words
+        private double Length; //total num of words
 
+        /// <summary>
+        /// Initializing empty fields
+        /// </summary>
         public Text()
         {
             Length = 0;
             Dict = new SortedDictionary<string, int>();
             Set = new HashSet<string>();
         }
-        public Text(string text)
+
+        /// <summary>
+        /// Initializing and add adds all text from file.
+        /// </summary>
+        /// <param name="fileName"></param>
+        public Text(string fileName)
         {
-            string[] textArr = Regex.Replace(
-                new string(text.Where(x => char.IsWhiteSpace(x) || char.IsLetter(x)).Select(char.ToLower)
-                    .ToArray()), @"\s+", " ").Split();
-            Length = textArr.Length;
             Dict = new SortedDictionary<string, int>();
             Set = new HashSet<string>();
-            foreach (string word in textArr)
-            {
-                if (Dict.ContainsKey(word))
-                    Dict[word]++;
-                else
-                    Dict[word] = 1;
-                Set.Add(word);
-            }
-
+            Length = 0;
+            Add(fileName);
         }
-        public void Add(string text)
+
+        /// <summary>
+        /// Adds all text from file to dictionary.
+        /// </summary>
+        /// <param name="filename"></param>
+        public void Add(string filename)
         {
-            string[] textArr = Regex.Replace(
-               new string(text.Where(x => char.IsWhiteSpace(x) || char.IsLetter(x)).Select(char.ToLower)
-                   .ToArray()), @"\s+", " ").Split();
-            Length += textArr.Length;
-            foreach (string word in textArr)
+            StreamReader input = new StreamReader(filename);//open stream
+            while (!input.EndOfStream) //while its not over
             {
-                if (Dict.ContainsKey(word))
-                    Dict[word]++;
-                else
-                    Dict[word] = 1;
-                Set.Add(word);
+                string text = input.ReadLine(); //read line
+                string[] textArr = Regex.Replace(
+               new string(text.Where(x => char.IsWhiteSpace(x) || char.IsLetter(x)).Select(char.ToLower)
+                   .ToArray()), @"\s+", " ").Split(); //processing line
+                Length += textArr.Length;//adding num of words in line to total words
+                foreach (string word in textArr)//adding every word
+                {
+                    if (Dict.ContainsKey(word))
+                        Dict[word]++;
+                    else
+                        Dict[word] = 1;
+                    Set.Add(word);
+                }
             }
+            input.Close();
         }
 
+        /// <summary>
+        /// Finds cos between two texts.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public static double Cos(Text first, Text second)
         {
-            var temp1 = new List<double>();
-            var temp2 = new List<double>();
+            List<double> temp1 = new List<double>();
+            List<double> temp2 = new List<double>();
             foreach (var word in first.Set.Intersect(second.Set).ToHashSet())
             {
                 temp1.Add(first.Dict[word]);
